@@ -9,13 +9,22 @@ gin-template
 ├── app
 │   ├── src
 |   |   ├──controllers
-|   |   ├──database
-|   |   ├──models
-|   |   ├──tmp
+|   |   |   ├──router.go(ルーティングの設定)
+|   |   |   └──index_controller.go
+|   |   |   └──user_controller.go
+|   |   |
+|   |   ├──database(マイグレーション・SQLファイル)
+|   |   ├──models(DB処理)
+|   |   |   ├──databese.go(DBの接続設定)
+|   |   |   └──user_model.go
+|   |   |
+|   |   ├──tmp(errorログ)
 |   |   ├──.air.toml
 |   |   ├──go.mod
 |   |   ├──go.sum
-|   |   └──main.go
+|   |   ├──main.go
+|   |   └──.env(example.envを参考にする)
+|   |
 │   └── Dockerfile
 └── docker-compose.yaml
 ```
