@@ -57,3 +57,6 @@ migrate create -ext sql -dir database/migrations -seq create_users
 ```
 migrate -database="mysql://root:root@tcp(host.docker.internal:3306)/testdb?multiStatements=true" -path=database/migrations/ up 1
 ```
+## URL  
+Hello Worldを出力→GET:[http://localhost:8000/index](http://localhost:8000/index)  
+usersテーブルの全検索→GET[http://localhost:8000/show_all](http://localhost:8000/show_all)
