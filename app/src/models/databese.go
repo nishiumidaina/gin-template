@@ -13,10 +13,10 @@ var Db *gorm.DB
 
 func init() {
 	user := os.Getenv("MYSQL_USER")
-	pw := os.Getenv("MYSQL_PASSWORD")
+	password := os.Getenv("MYSQL_PASSWORD")
 	host := os.Getenv("MYSQL_HOST")
 	name := os.Getenv("MYSQL_DATABASE")
-	var path string = fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8&parseTime=true", user, pw, host, name)
+	var path string = fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8&parseTime=true", user, password, host, name)
 	dialector := mysql.Open(path)
 	var err error
 	if Db, err = gorm.Open(dialector); err != nil {
