@@ -29,6 +29,7 @@ gin-template
 |   |   └──.env(※example.envを参考にして配置する)
 |   |
 │   └── Dockerfile
+|
 └── docker-compose.yaml
 ```
 ## 環境構築
