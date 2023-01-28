@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./app/Dockerfile
+    ports:
+     - "8000:8000"
+    volumes:
+      - ./app/src/:/go/src
+    tty: true
+    environment:
+      MYSQL_DATABASE: my_testdb
+      MYSQL_HOST: host.docker.internal:3306
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
