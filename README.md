@@ -4,6 +4,21 @@
 [Gin](https://github.com/gin-gonic/gin)：フレームワーク  
 [GORM](https://gorm.io/ja_JP/docs/index.html)：ORMライブラリ  
 [golang-migrate](https://github.com/golang-migrate/migrate)：マイグレーションツール  
+```
+gin-template
+├── app
+│   ├── src
+|   |   ├──controllers
+|   |   ├──database
+|   |   ├──models
+|   |   ├──tmp
+|   |   ├──.air.toml
+|   |   ├──go.mod
+|   |   ├──go.sum
+|   |   └──main.go
+│   └── Dockerfile
+└── docker-compose.yaml
+```
 ## 環境構築
 1.リポジトリをclone
 ```
