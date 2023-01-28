@@ -55,5 +55,5 @@ migrate create -ext sql -dir database/migrations -seq create_users
 ```
 6.マイグレーションの実行(例：usersテーブル)
 ```
-migrate -database="mysql://root:root@tcp(host.docker.internal:3306)/my_testdb?multiStatements=true" -path=database/migrations/ up 1
+migrate -database="mysql://root:root@tcp(host.docker.internal:3306)/testdb?multiStatements=true" -path=database/migrations/ up 1
 ```
