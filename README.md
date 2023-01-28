@@ -26,7 +26,7 @@ gin-template
 |   |   ├──go.mod
 |   |   ├──go.sum
 |   |   ├──main.go
-|   |   └──.env(example.envを参考にする)
+|   |   └──.env(※example.envを参考にして配置する)
 |   |
 │   └── Dockerfile
 └── docker-compose.yaml
