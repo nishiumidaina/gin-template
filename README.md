@@ -13,7 +13,7 @@ gin-template
 │   ├── src
 |   |   ├──controllers
 |   |   |   ├──router.go(ルーティングの設定)
-|   |   |   └──index_controller.go
+|   |   |   ├─index_controller.go
 |   |   |   └──user_controller.go
 |   |   |
 |   |   ├──database(マイグレーション・SQLファイル)
