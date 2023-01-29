@@ -1,13 +1,13 @@
-package controller
+package user
 
 import (
-	"gin-template/models"
+	"gin-template/models/users"
 
 	"github.com/gin-gonic/gin"
 )
 
 func ShowAllBlog(c *gin.Context) {
-	data := model.GetAll()
+	data := user.GetAll()
 	c.JSON(200, gin.H{
 		"message": data,
 	})

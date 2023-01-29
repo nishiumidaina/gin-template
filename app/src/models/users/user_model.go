@@ -1,6 +1,8 @@
-package model
+package user
 
 import (
+	"gin-template/models"
+
 	"gorm.io/gorm"
 )
 
@@ -10,7 +12,7 @@ type User struct {
 }
 
 func GetAll() (data []User) {
-	result := Db.Find(&data)
+	result := model.Db.Find(&data)
 
 	if result.Error != nil {
 		panic(result.Error)
