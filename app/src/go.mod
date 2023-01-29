@@ -1,4 +1,4 @@
-module nothing-behind.com/sample_gin
+module gin-template
 
 go 1.19
 

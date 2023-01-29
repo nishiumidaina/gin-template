@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"nothing-behind.com/sample_gin/models"
+	"gin-template/models"
 
 	"github.com/gin-gonic/gin"
 )

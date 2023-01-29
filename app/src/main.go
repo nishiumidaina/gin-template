@@ -1,7 +1,7 @@
 package main
 
 import (
-	"nothing-behind.com/sample_gin/controllers"
+	"gin-template/controllers"
 )
 
 func main() {
