@@ -1,7 +1,7 @@
 FROM golang:1.19-alpine
 
 WORKDIR /go/src
-COPY ./app/src .
+COPY ./src/app .
 
 RUN apk upgrade --update && apk --no-cache add git
 

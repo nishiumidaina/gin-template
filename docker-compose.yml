@@ -4,11 +4,11 @@ services:
   app:
     build:
       context: .
-      dockerfile: ./app/Dockerfile
+      dockerfile: ./src/Dockerfile
     ports:
      - "8000:8000"
     volumes:
-      - ./app/src/:/go/src
+      - ./src/app/:/go/src
     tty: true
     environment:
       MYSQL_DATABASE: testdb
